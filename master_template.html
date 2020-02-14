@@ -244,6 +244,25 @@
   <meta mktomodulescope="true" class="mktoNumber" id="hr-top-margin" mktoname="Top Margin" default="10" />
   <meta mktomodulescope="true" class="mktoNumber" id="hr-bottom-margin" mktoname="Bottom Margin" default="10" />
 
+  <!-- 2 Column Left Image w/Button -->
+  <meta class="mktoList" id="2ColumnLeftImageBackgroundColor" mktoname="BackgroundColor" values="#efeefy,#ffffff,#ECE9E2,"
+    mktomodulescope="true" />
+
+  <!--(fa11fjf1) Three Column, UW CTA section3 -->
+  <meta mktoModuleScope="true" class="mktoNumber" id="3col_uwcta_top_space" mktoname="Top Space" default="30" step="1"
+    min="0" max="60" />
+  <meta mktoModuleScope="true" class="mktoNumber" id="3col_uwcta_btm_space" mktoname="Bottom Space" default="20" step="1"
+    min="0" max="60" />
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button URL" id="3col_uwcta_col1_URL_btn" default="#">
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button Text" id="3col_uwcta_col1_text_btn"
+    default="RSVP">
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button URL" id="3col_uwcta_col2_URL_btn" default="#">
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button Text" id="3col_uwcta_col2_text_btn"
+    default="RSVP">
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button URL" id="3col_uwcta_col3_URL_btn" default="#">
+  <meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button Text" id="3col_uwcta_col3_text_btn"
+    default="RSVP">
+
 
   <!--END OF MARKETO VARIABLES-->
 
@@ -1369,7 +1388,7 @@
                       class="deviceWidth_11f26 mktoModule" mktoname="2 Column Left Image w/ Button" id="BodySection2">
                     
                       <tr>
-                        <td bgcolor="#efeef4">
+                        <td bgcolor="${2ColumnLeftImageBackgroundColor}">
                           <table role="Event Agenda Section Inner Container" class="deviceWidth1_11f26"
                             style="width: 600px; margin: 0 auto; border-collapse: collapse;" align="center" cellpadding="0" cellspacing="0"
                             width="600">
@@ -1380,7 +1399,7 @@
                                     align="absbottom" width="300" alt="Event Agenda Image1" border="0" mktoname="Image" />
                                 </a>
                               </td>
-                              <td valign="top" class="block_11f26" style="background-color: #efeef4;padding: 0px 10px 0px 22px;">
+                              <td valign="top" class="block_11f26" style="background-color: ${2ColumnLeftImageBackgroundColor};padding: 0px 10px 0px 22px;">
                                 <table role="Event Agenda Tab1 Right Content" style="width: 100%; border-collapse: collapse;margin:0 auto;"
                                   border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
                     
@@ -1450,13 +1469,13 @@
                       class="deviceWidth_11f26 mktoModule" mktoname="2 Column Right Image w/ Button" id="BodySection3">
                     
                       <tr>
-                        <td class="pad-top" bgcolor="#efeef4">
+                        <td class="pad-top" bgcolor="${2ColumnLeftImageBackgroundColor}">
                           <table role="Event Agenda Section2 Inner Container" class="deviceWidth1_11f26"
                             style="width: 600px; margin: 0 auto; border-collapse: collapse;" align="center" cellpadding="0" cellspacing="0"
                             width="600">
                     
                             <tr>
-                              <td valign="top" class="block_11f26" style="background-color: #efeef4;padding: 0px 10px 0px 22px;">
+                              <td valign="top" class="block_11f26" style="background-color: ${2ColumnLeftImageBackgroundColor};padding: 0px 10px 0px 22px;">
                                 <table role="Event Agenda Tab2 Left Content" style="width: 100%; border-collapse: collapse;margin:0 auto;"
                                   border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
                     
@@ -1530,6 +1549,151 @@
                       </tr>
                     </table>
                     <!-- END 2 COLUMN RIGHT IMAGE W/BUTTON -->
+
+                    <!--2 COLUMN-->
+                    <table role="Presentation Module" class="mktoModule" mktoAddByDefault="FALSE" id="body_section5" cellpadding="0"
+                      cellspacing="0" align="center" border="0" width="100%"
+                      style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="2 Column - Image Above">
+                      <tr>
+                        <td bgcolor="#ffffff" style="background-color:#ffffff;">
+                          <table role="Presentation Module Container" align="center" style="margin:0 auto;width:560px;"
+                            class="checkerboard_inner_table" width="560" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td height="${ase_body_section5_top_space}" style="line-height:1px;font-size:1px;">&nbsp;
+                              </td>
+                            </tr>
+                            <!--two column section-->
+                            <tr>
+                              <td valign="top" style="vertical-align:top;">
+                                <table role="Presentation Main Section" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                  style="width:100%;">
+                                  <tr>
+                                    <!--one column-->
+                                    <td valign="top" width="265" class="res" style="width:265px;vertical-align:top;">
+                                      <table role="Presentation1" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                        style="width:100%;">
+                                        <tr>
+                                          <td valign="top" style="vertical-align:top;">
+                                            <div class="mktoImg" id="body_section5_image1" mktoname="Col-1 Image">
+                                              <img align="absbottom" class="full-width_fa11fjf1"
+                                                src="https://explore.uw.edu/rs/131-AQO-225/images/400x270.png" alt="Presentation Image1"
+                                                border="0" width="265" />
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="background-color:#ffffff;padding: 0px 10px 0px 22px;">                                            
+                                            <table role="Presentation1 Content" width="100%" align="center" cellpadding="0"
+                                              cellspacing="0" border="0" style="width:100%;margin:0 auto;">
+                                              <tr>
+                                                <td height="20" style="line-height:1px;font-size:1px;">
+                                                  &nbsp; </td>
+                                              </tr>
+                                              <tr>
+                                                <td valign="top"
+                                                  style="font-family:'Open Sans', arial,sans-serif,helvetica;font-size:15px;font-weight:bold;line-height:21px;color:#3d3d3d;vertical-align:top;text-align:left;">
+                                                  <div class="mktoText" id="twocolumnImageAboveSubheadOne" mktoname="Left Column - Subhead">Product
+                                                  Presentation 2 col
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td height="8" style="line-height:1px;font-size:1px;">
+                                                  &nbsp; </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="body-copy" valign="top"
+                                                  style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:13px;font-weight:normal;line-height:${acrLineHeight};color:#3d3d3d;vertical-align:top;text-align:left;">
+                                                  <div class="mktoText" id="twocolumnImageAboveCopyOne" mktoname="Left Column - Body Copy">The research
+                                                  raises the hope
+                                                  that someday it
+                                                  may be possible
+                                                  to repair
+                                                  retinas damaged
+                                                  by trauma,
+                                                  glaucoma and
+                                                  other eye
+                                                  diseases.</div></td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <!--one column-->
+                                    <td class="res phne_height" width="30" style="line-height:1px;font-size:1px;">
+                                      &nbsp;</td>
+                                    <!--two column -->
+                                    <td valign="top" width="265" class="res" style="width:265px;vertical-align:top;">
+                                      <table role="Presentation2" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                        style="width:100%;">
+                    
+                                        <tr>
+                                          <td valign="top" style="vertical-align:top;">
+                                            <div class="mktoImg" id="body_section5_image2" mktoname="Col-2 Image">
+                                              <img align="absbottom" class="full-width_fa11fjf1"
+                                                src="https://explore.uw.edu/rs/131-AQO-225/images/400x270.png" alt="Presentation2 Image"
+                                                border="0" width="265" />
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" style="background-color:#ffffff;padding: 0px 10px 0px 22px;">
+                                              <table role="Presentation2 Content" width="100%" align="center" cellpadding="0"
+                                                cellspacing="0" border="0" style="width:100%;margin:0 auto;">
+                    
+                                                <tr>
+                                                  <td height="20" style="line-height:1px;font-size:1px;">
+                                                    &nbsp; </td>
+                                                </tr>
+                                                <tr>
+                                                  <td valign="top"
+                                                    style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:15px;font-weight:bold;line-height:21px;color:#3d3d3d;vertical-align:top;text-align:left;">
+                                                    <div class="mktoText" id="twocolumnImageAboveSubheadTwo" mktoname="Right Column - Subhead">Product
+                                                    Presentation 2 col
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="8" style="line-height:1px;font-size:1px;">
+                                                    &nbsp; </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="body-copy" valign="top"
+                                                    style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:13px;font-weight:normal;line-height:${acrLineHeight};color:#3d3d3d;vertical-align:top;text-align:left;">
+                                                    <div class="mktoText" id="twocolumnImageAboveCopyTwo" mktoname="Right Column - Body Copy">The research
+                                                    raises the hope
+                                                    that someday it
+                                                    may be possible
+                                                    to repair
+                                                    retinas damaged
+                                                    by trauma,
+                                                    glaucoma and
+                                                    other eye
+                                                    diseases. </div></td>
+                                                </tr> 
+                                              </table>                                            
+                                          </td>
+                                      </table>
+                                    </td>
+                                    <!--two column -->
+                                  </tr>
+                    
+                                </table>
+                              </td>
+                            </tr>
+                            <!--two column section ends here-->
+                            <tr>
+                              <td height="${ase_body_section5_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;
+                              </td>
+                            </tr>
+                    
+                          </table>
+                        </td>
+                      </tr>
+                    
+                    </table>
+                    <!-- END TWO COLUMN -->
 
                     <!-- Combined Layout (2 Column- Right/Left Image -->
                     
@@ -1765,156 +1929,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <!-- END ICON THREE-QUARTERS LAYOUT -->
-
-                    <!--2 COLUMN-->
-                    <table role="Presentation Module" class="mktoModule" mktoAddByDefault="FALSE" id="body_section5" cellpadding="0"
-                      cellspacing="0" align="center" border="0" width="100%"
-                      style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="2 Column - Img &amp; CTA">
-                      <tr>
-                        <td bgcolor="#ffffff" style="background-color:#ffffff;">
-                          <table role="Presentation Module Container" align="center" style="margin:0 auto;width:560px;"
-                            class="checkerboard_inner_table" width="560" cellpadding="0" cellspacing="0">
-                            <tr>
-                              <td height="${ase_body_section5_top_space}" style="line-height:1px;font-size:1px;">&nbsp;
-                              </td>
-                            </tr>
-                            <!--two column section-->
-                            <tr>
-                              <td valign="top" style="vertical-align:top;">
-                                <table role="Presentation Main Section" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                  style="width:100%;">
-                                  <tr>
-                                    <!--one column-->
-                                    <td valign="top" width="265" class="res" style="width:265px;vertical-align:top;">
-                                      <table role="Presentation1" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                        style="width:100%;">
-                                        <tr>
-                                          <td valign="top" style="vertical-align:top;">
-                                            <div class="mktoImg" id="body_section5_image1" mktoname="Col-1 Image">
-                                              <img align="absbottom" class="full-width_fa11fjf1"
-                                                src="https://explore.uw.edu/rs/131-AQO-225/images/400x270.png" alt="Presentation Image1"
-                                                border="0" width="265" />
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td bgcolor="#ffffff" style="background-color:#ffffff">
-                                            <div class="mktoText" id="body_section5_content1" mktoname="Col-1 Content">
-                                              <table role="Presentation1 Content" width="100%" align="center" cellpadding="0"
-                                                cellspacing="0" border="0" style="width:100%;margin:0 auto;">
-                                                <tr>
-                                                  <td height="20" style="line-height:1px;font-size:1px;">
-                                                    &nbsp; </td>
-                                                </tr>
-                                                <tr>
-                                                  <td valign="top"
-                                                    style="font-family:'Open Sans', arial,sans-serif,helvetica;font-size:15px;font-weight:bold;line-height:21px;color:#3d3d3d;vertical-align:top;text-align:left;">
-                                                    Product
-                                                    Presentation
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td height="8" style="line-height:1px;font-size:1px;">
-                                                    &nbsp; </td>
-                                                </tr>
-                                                <tr>
-                                                  <td class="body-copy" valign="top"
-                                                    style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:13px;font-weight:normal;line-height:${acrLineHeight};color:#3d3d3d;vertical-align:top;text-align:left;">
-                                                    The research
-                                                    raises the hope
-                                                    that someday it
-                                                    may be possible
-                                                    to repair
-                                                    retinas damaged
-                                                    by trauma,
-                                                    glaucoma and
-                                                    other eye
-                                                    diseases.</td>
-                                                </tr>
-                                              </table>
-                                            </div>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                    <!--one column-->
-                                    <td class="res phne_height" width="30" style="line-height:1px;font-size:1px;">
-                                      &nbsp;</td>
-                                    <!--two column -->
-                                    <td valign="top" width="265" class="res" style="width:265px;vertical-align:top;">
-                                      <table role="Presentation2" width="100%" cellpadding="0" cellspacing="0" border="0"
-                                        style="width:100%;">
-                    
-                                        <tr>
-                                          <td valign="top" style="vertical-align:top;">
-                                            <div class="mktoImg" id="body_section5_image2" mktoname="Col-2 Image">
-                                              <img align="absbottom" class="full-width_fa11fjf1"
-                                                src="https://explore.uw.edu/rs/131-AQO-225/images/400x270.png" alt="Presentation2 Image"
-                                                border="0" width="265" />
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td bgcolor="#ffffff" style="background-color:#ffffff">
-                                            <div class="mktoText" id="body_section5_content2" mktoname="Col-2 Content">
-                                              <table role="Presentation2 Content" width="100%" align="center" cellpadding="0"
-                                                cellspacing="0" border="0" style="width:100%;margin:0 auto;">
-                    
-                                                <tr>
-                                                  <td height="20" style="line-height:1px;font-size:1px;">
-                                                    &nbsp; </td>
-                                                </tr>
-                                                <tr>
-                                                  <td valign="top"
-                                                    style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:15px;font-weight:bold;line-height:21px;color:#3d3d3d;vertical-align:top;text-align:left;">
-                                                    Product
-                                                    Presentation
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td height="8" style="line-height:1px;font-size:1px;">
-                                                    &nbsp; </td>
-                                                </tr>
-                                                <tr>
-                                                  <td class="body-copy" valign="top"
-                                                    style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:13px;font-weight:normal;line-height:${acrLineHeight};color:#3d3d3d;vertical-align:top;text-align:left;">
-                                                    The research
-                                                    raises the hope
-                                                    that someday it
-                                                    may be possible
-                                                    to repair
-                                                    retinas damaged
-                                                    by trauma,
-                                                    glaucoma and
-                                                    other eye
-                                                    diseases. </td>
-                                                </tr> 
-                                              </table>
-                                            </div>
-                                          </td>
-                                        </tr>
-                    
-                                      </table>
-                                    </td>
-                                    <!--two column -->
-                                  </tr>
-                    
-                                </table>
-                              </td>
-                            </tr>
-                            <!--two column section ends here-->
-                            <tr>
-                              <td height="${ase_body_section5_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;
-                              </td>
-                            </tr>
-                    
-                          </table>
-                        </td>
-                      </tr>
-                    
-                    </table>
-                    <!-- END TWO COLUMN -->
+                    <!-- END ICON THREE-QUARTERS LAYOUT -->                    
 
                     <!-- 11f26 - Event w/ Date & CTAs -->
                     <table role="Event Date section" class="deviceWidth_11f26 mktoModule" mktoAddByDefault="FALSE" width="100%" cellpadding="0" cellspacing="0" style="width:100%;"
@@ -3553,9 +3568,9 @@
                     </table>
                     <!--Photo Gallery ends here-->
 
-                    <!--ACR SPONSOR ONE COLUMN WRAPPER-->
+                    <!--Sponsor ONE COLUMN WRAPPER-->
                     <table border="0" class="white-background mktoModule" mktoAddByDefault="FALSE" cellpadding="0" cellspacing="0" width="100%" 
-                      id="ACRsponsorONEColumn" mktoName="ACR Sponsor 1 Column" >
+                      id="ACRsponsorONEColumn" mktoName="Sponsor 1 Column" >
                       <tr>
                         <td class="white-background acr-sponsor-td-row" style="background-color: #fff; ${ACRshowSponsorRuleOneColumn}">
                           <!--ONE COLUMN LAYOUT ROW-->
@@ -3564,9 +3579,9 @@
                               <!--IMAGE COLUMN-->
                               <td class="stack-column" style="width: 100%; background-color: #ffffff; vertical-align:top;" align="center">
                                 <a href="${ACROneColumnSponsorURL}">
-                                  <img src="https://explore.uw.edu/rs/131-AQO-225/images/150x80.png" alt="2 Column Image" width="150"
-                                    style="display: block;" class="mktoImg" id="sponsorOneColumn" mktoName="Image"
-                                    mktoLockImgStyle="true" />
+                                  <img src="https://explore.uw.edu/rs/131-AQO-225/images/150x80.png" alt="2 Column Image" 
+                                    style="display: block;width:auto" class="mktoImg" id="sponsorOneColumn" mktoName="Image"
+                                    mktoLockImgStyle="false" mktoLockImgSize="false" />
                                 </a>
                               </td>
                               <!--END IMAGE COLUMN-->
@@ -3577,11 +3592,11 @@
                         </td>
                       </tr>
                     </table>
-                    <!--END ACR SPONSOR ONE COLUMN WRAPPER-->
+                    <!--END Sponsor ONE COLUMN WRAPPER-->
                     
-                    <!--ACR SPONSOR TWO COLUMN WRAPPER-->
+                    <!--Sponsor TWO COLUMN WRAPPER-->
                     <table border="0" class="white-background mktoModule" mktoAddByDefault="FALSE" cellpadding="0" cellspacing="0" width="100%" 
-                      id="ACRsponsorTwoColumn" mktoName="ACR Sponsor 2 Column" >
+                      id="ACRsponsorTwoColumn" mktoName="Sponsor 2 Column" >
                       <tr>
                         <td class="white-background acr-sponsor-td-row" style="background-color: #fff; ${ACRshowSponsorRuleTwoColumns}">
                           <!--TWO COLUMN LAYOUT ROW-->
@@ -3614,11 +3629,11 @@
                         </td>
                       </tr>
                     </table>
-                    <!--END ACR SPONSOR TWO COLUMN WRAPPER-->
+                    <!--END Sponsor TWO COLUMN WRAPPER-->
                     
-                    <!--ACR SPONSOR THREE COLUMN WRAPPER-->
+                    <!--Sponsor THREE COLUMN WRAPPER-->
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule"
-                      id="ACRsponsorThreeColumn" mktoName="ACR Sponsor 3 Column" mktoAddByDefault="FALSE">
+                      id="ACRsponsorThreeColumn" mktoName="Sponsor 3 Column" mktoAddByDefault="FALSE">
                       <tr>
                         <td class="white-background acr-sponsor-td-row" style="background-color: #fff; ${ACRshowSponsorRuleThreeColumns}">
                           <!--THREE COLUMN LAYOUT ROW-->
@@ -3662,11 +3677,11 @@
                         </td>
                       </tr>
                     </table>
-                    <!--END ACR SPONSOR THREE COLUMN WRAPPER-->
+                    <!--END Sponsor THREE COLUMN WRAPPER-->
                     
-                    <!--ACR SPONSOR FOUR COLUMN WRAPPER-->
+                    <!--Sponsor FOUR COLUMN WRAPPER-->
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule"
-                      id="ACRsponsorFourColumn" mktoName="ACR Sponsor 4 Column" mktoAddByDefault="FALSE">
+                      id="ACRsponsorFourColumn" mktoName="Sponsor 4 Column" mktoAddByDefault="FALSE">
                       <tr>
                         <td class="white-background acr-sponsor-td-row" style="background-color: #fff; ${ACRshowSponsorRuleFourColumns}">
                           <!--THREE COLUMN LAYOUT ROW-->
@@ -3721,7 +3736,7 @@
                         </td>
                       </tr>
                     </table>
-                    <!--END ACR SPONSOR FOUR COLUMN WRAPPER-->
+                    <!--END Sponsor FOUR COLUMN WRAPPER-->
 
                     <!--FOOTER LINK ROW GREY BAR WRAPPER-->
                     <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background grey-bar-footer mktoModule"
