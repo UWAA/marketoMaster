@@ -19,14 +19,13 @@ steps:
   displayName: 'Run a multi-line script'
 
 # Starter pipeline
+
 - task: GitHubRelease@1
   inputs:
-    gitHubConnection: 'UWAA GitHub'
+    gitHubConnection: 'release'
     repositoryName: 'UWAA/marketoMaster'
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'gitTag'
-    releaseNotesSource: 'inline'
-    isDraft: true
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
