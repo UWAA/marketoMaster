@@ -17,7 +17,7 @@ steps:
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'gitTag'
-    tagPattern: '*.*.*'
+    tagPattern: 'v*.*.*'
     isDraft: true
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
