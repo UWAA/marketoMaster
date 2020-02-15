@@ -4,22 +4,12 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- release
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
-# Starter pipeline
-
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'release'
@@ -27,5 +17,7 @@ steps:
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'gitTag'
+    tagPattern: '*.*.*'
+    isDraft: true
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
