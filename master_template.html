@@ -263,6 +263,9 @@
   <meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button Text" id="3col_uwcta_col3_text_btn"
     default="RSVP">
 
+  <!-- _VELO - AddressUpdate Variables-->
+  <meta class="mktoList" id="_VELO - AddressUpdate" mktoname="Token Selection" values="{{my.regionalAddressUpdate}}, {{my.addressUpdate}}" /> 
+
 
   <!--END OF MARKETO VARIABLES-->
 
@@ -3469,7 +3472,7 @@
                     <!-- ADDRESS UPDATE MODULE -->
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="addressUpdate"
                       mktoName="_VELO - AddressUpdate" mktoAddByDefault="FALSE">
-                      {{my.addressUpdate}}
+                      ${_VELO - AddressUpdate}
                     </table>
                     <!-- END ADDRESS UPDATE MODULE -->
                     
