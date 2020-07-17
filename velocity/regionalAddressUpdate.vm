@@ -1,0 +1,138 @@
+## Use this value to adjust the background color.
+## You can choose from only the following options: '#4b2e83' or 'e8e3d3' or '#FFFFFF'
+#set($addressVerificationBackgroundColor = "#e8e3d3")
+
+##Do not edit any code below this point.
+#set($addressVerificationTextColor = "#3d3d3d")
+#set($addressVerificationTitleColor = "#4b2e83")
+#set($addressVerificationLinkColor = "#0088DD")
+
+#if($addressVerificationBackgroundColor == "#4b2e83")
+#set($addressVerificationTextColor = "#FFFFFF")
+#set($addressVerificationTitleColor = "#FFFFFF")
+#set($addressVerificationLinkColor = "#59befd")
+#end
+
+#if($addressVerificationBackgroundColor == "#FFFFFF")
+#set($addressVerificationTextColor = "#3d3d3d")
+#set($addressVerificationTitleColor = "#4b2e83")
+#set($addressVerificationLinkColor = "#0088DD")
+#end
+
+
+## Logic to ensure that all fields of the home address are present in Marketo.
+#set($marketoAddressComplete = "false")
+
+## First - only show this is we have an Advance ID for the person.
+#if (!$lead.advanceID.isEmpty() )
+#set ($marketoAddressComplete = "true")
+
+
+## Second - since we have an Advance ID, do we have all the components for a valid home address?
+#if (!$lead.aDVFirstName.isEmpty() && !$lead.aDVLastName.isEmpty() && !$lead.homeAddress1.isEmpty() && !$lead.homeCity.isEmpty() && !$lead.homeState.isEmpty() && !$lead.homePostalCode.isEmpty() )
+#set ($marketoAddressComplete = "true")
+
+#else
+#set ($marketoAddressComplete = "false")
+#end
+
+
+## ending on if we have an Advance ID or not
+#else
+#set ($marketoAddressComplete = "false")
+#end
+
+
+
+
+## Only show an address if we have all the fields to display.  Otherwise, show nothing.
+
+#if ($marketoAddressComplete == "true" ) 
+
+<tr>
+    <!--CALL OUT HEAD-->
+    <td
+        class="text callout-head"
+        style="background-color: #e8e3d3; color: #4b2e84; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 20px; font-weight: 600; line-height: 1.2; padding: 15px 25px 5px 25px; text-align: center; text-transform: uppercase; vertical-align: middle;">
+        <div class="mktoText" mktoname="Header">
+            Stay Connected
+        </div>
+    </td>
+    <!--END CALL OUT HEAD-->
+</tr>
+<tr>
+  <td align="center" valign="top" class="text" style="background-color: ${addressVerificationBackgroundColor}; color: ${addressVerificationTextColor}; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 18px; padding: 10px 15px; vertical-align: middle;">
+    <div class="mktoText" id="addressVerificationText" mktoname="Address Veification Checker">
+Before you go, please take a moment to review the address we have on file for you.  <br /><br />
+
+ <strong>${lead.aDVFirstName} ${lead.aDVLastName}<br />
+ ${lead.homeAddress1}<br />
+ ${lead.homeCity}, ${lead.homeState} ${lead.homePostalCode}</strong> <br /><br />
+
+If this information is incorrect, please help us stay connected by updating it. 
+ 
+
+</div>
+  </td>
+</tr>
+<tr>
+                          <td bgcolor="#fffff" style="background-color: ${addressVerificationBackgroundColor}; padding: 20px 0;" class="text">
+                            <center>
+                              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                <tr>
+                                  <td class="text" align="center" bgcolor="#4b2e83" style="font-size: 16px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;"><a
+                                    href="https://www.washington.edu/alumni/services/update/" target="_blank" style="color: #FFFFFF; text-decoration: none; border: 1px solid #4b2e83; display: inline-block; text-transform: uppercase;">Update your address</a>
+                                  </td>
+                                  <td align="center">
+                                    <a href="https://www.washington.edu/alumni/services/update/">
+                                      <img src="http://explore.uw.edu/rs/131-AQO-225/images/ArrowCap.png">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                          </td>
+                        </tr>
+                      
+#else    
+
+<tr>
+    <!--CALL OUT HEAD-->
+    <td
+        class="text callout-head"
+        style="background-color: #e8e3d3; color: #4b2e84; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 20px; font-weight: 600; line-height: 1.2; padding: 15px 25px 5px 25px; text-align: center; text-transform: uppercase; vertical-align: middle;">
+        <div class="mktoText" mktoname="Header">
+            Stay Connected
+        </div>
+    </td>
+    <!--END CALL OUT HEAD-->
+</tr>
+<tr>
+  <td align="center" valign="top" class="text" style="background-color: ${addressVerificationBackgroundColor}; color: ${addressVerificationTextColor}; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 18px; padding: 10px 15px; vertical-align: middle;">
+    <div class="mktoText" id="addressVerificationText" mktoname="Address Veification Checker">
+Our files show your address is missing or incomplete.<br/> Please help us stay connected by updating it. 
+ 
+
+</div>
+  </td>
+</tr>
+<tr>
+                          <td bgcolor="#fffff" style="background-color: ${addressVerificationBackgroundColor}; padding: 20px 0;" class="text">
+                            <center>
+                              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                <tr>
+                                  <td class="text" align="center" bgcolor="#4b2e83" style="font-size: 16px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;"><a
+                                    href="https://www.washington.edu/alumni/services/update/" target="_blank" style="color: #FFFFFF; text-decoration: none; border: 1px solid #4b2e83; display: inline-block; text-transform: uppercase;">Update your address.</a>
+                                  </td>
+                                  <td align="center">
+                                    <a href="https://www.washington.edu/alumni/services/update/">
+                                      <img src="http://explore.uw.edu/rs/131-AQO-225/images/ArrowCap.png">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                          </td>
+                        </tr>
+
+#end
